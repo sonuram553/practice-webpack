@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Snacker Comic";
+  src: url("./snacker-comic-font.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hello {
+  color: red;
+  font-size: 3rem;
+  font-family: "Snacker Comic";
+  background-image: url("./blackgoose.png");
+}
