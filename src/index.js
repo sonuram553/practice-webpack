@@ -1,21 +1,16 @@
 import _ from "lodash";
-import "./style.css";
-import Tree from "./tree.png";
-import Data from "./data.xml";
-import Notes from "./data.csv";
+import printMe from "./print";
 
 function component() {
   const element = document.createElement("div");
+  const btn = document.createElement("button");
+
   element.innerHTML = _.join(["Hello", "webpack"], " ");
-  element.classList.add("hello");
 
-  // Add the image to our existing div.
-  const img = new Image();
-  img.src = Tree;
-  element.appendChild(img);
+  btn.innerHTML = "Click me and check the console!";
+  btn.onclick = printMe;
 
-  console.log(Data);
-  console.log(Notes);
+  element.appendChild(btn);
 
   return element;
 }
