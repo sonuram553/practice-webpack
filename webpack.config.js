@@ -8,7 +8,7 @@ module.exports = {
     static: "./dist",
   },
 
-  entry: { index: "./src/index.js", print: "./src/print.js" },
+  entry: { index: "./src/index.js" },
 
   plugins: [new HtmlWebpackPlugin({ title: "Development" })],
 
@@ -17,9 +17,5 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
     publicPath: "/",
-  },
-
-  optimization: {
-    runtimeChunk: "single",
   },
 };
